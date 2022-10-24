@@ -1,0 +1,19 @@
+
+
+<div class="p-3 mb-2 bg-secondary text-white">
+  <h1>Stupid coach</h1>
+
+</div>
+<div class ="container text-center p-3 mb-2">
+  <div class ="bg-warning text-dark p-2 m-2 rounded">
+    <p><%= @question %>
+    <br> - You</p>
+  </div>
+  <div class="bg-danger text-white p-2 m-2 rounded">
+    <p><%= @answer %>
+    <br> - Your stupid coach </p>
+  </div>
+  <div>
+    <button type="button" class="btn btn-success"><%= link_to "Ask another question", ask_path, class: "text-decoration-none text-white" %></button>
+  </div>
+</div>

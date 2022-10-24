@@ -1,0 +1,9 @@
+<div class="container text-center p-3 mb-2 bg-secondary text-white">
+<h1>Ask your stupid coach a question</h1>
+<div class="mb-3">
+  <form action="/answer" method="get" data-turbo="false">
+    <input type="text" name="question" placeholder="What do you want to ask?" value="<%= params[:member]%>" class="form-control">
+    <input type="submit" value="Ask!" class="btn btn-dark mt-3 d-grid gap-2 col-6 mx-auto">
+  </form>
+</div>
+</div>
